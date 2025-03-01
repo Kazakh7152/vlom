@@ -53,7 +53,7 @@ function createWires() {
 
 function drawLine(start, end) {
     const svg = document.getElementById('connections');
-    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    const line = document.createElementNS("", "line");
     const startRect = start.getBoundingClientRect();
     const endRect = end.getBoundingClientRect();
     const svgRect = svg.getBoundingClientRect();
