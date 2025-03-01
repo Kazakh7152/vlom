@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-игра с головоломками</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Мини-игра с головоломками</h1>
+    
+    <div class="game-container">
+        <h2>Соедините провода</h2>
+        <div class="wires" id="left-wires"></div>
+        <svg id="connections"></svg>
+        <div class="wires" id="right-wires"></div>
+        <button onclick="checkConnections()">Проверить</button>
+        <p id="result"></p>
+    </div>
+    
+    <div class="game-container">
+        <h2>Продолжите последовательность</h2>
+        <p id="sequence"></p>
+        <div id="number-options"></div>
+        <p id="number-result"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
